@@ -1,0 +1,122 @@
+import { UnitType } from "../types/UnitType.ts";
+import { UnitStatus } from "../types/UnitStatus.ts";
+import skeleton from "../assets/skeleton.png";
+import centaur from "../assets/centaur.png";
+import bandit from "../assets/bandit.png";
+import elfArcher from "../assets/elf_archer.png";
+import skeletonMage from "../assets/skeleton_mage.png";
+import archimage from "../assets/archimage.png";
+import monk from "../assets/monk.png";
+import bishop from "../assets/bishop.png";
+import sirena from "../assets/sirena.png";
+
+export const unitsData = [
+  {
+    id: "1",
+    name: "Skeleton",
+    type: UnitType.Melee,
+    health: 100,
+    maxHealth: 100,
+    damage: 25,
+    heal: 0,
+    initiative: 50,
+    status: UnitStatus.Normal,
+    image: skeleton,
+  },
+  {
+    id: "2",
+    name: "Centaur",
+    type: UnitType.Melee,
+    health: 150,
+    maxHealth: 150,
+    damage: 50,
+    heal: 0,
+    initiative: 50,
+    status: UnitStatus.Normal,
+    image: centaur,
+  },
+  {
+    id: "3",
+    name: "Bandit",
+    type: UnitType.Range,
+    health: 75,
+    maxHealth: 75,
+    damage: 30,
+    heal: 0,
+    initiative: 60,
+    status: UnitStatus.Normal,
+    image: bandit,
+  },
+  {
+    id: "4",
+    name: "Elf Archer",
+    type: UnitType.Range,
+    health: 90,
+    maxHealth: 90,
+    damage: 45,
+    heal: 0,
+    initiative: 60,
+    status: UnitStatus.Normal,
+    image: elfArcher,
+  },
+  {
+    id: "5",
+    name: "Skeleton Mage",
+    type: UnitType.Mage,
+    health: 50,
+    maxHealth: 50,
+    damage: 20,
+    heal: 0,
+    initiative: 40,
+    status: UnitStatus.Normal,
+    image: skeletonMage,
+  },
+  {
+    id: "6",
+    name: "Archimage",
+    type: UnitType.Mage,
+    health: 90,
+    maxHealth: 90,
+    damage: 30,
+    heal: 0,
+    initiative: 40,
+    status: UnitStatus.Normal,
+    image: archimage,
+  },
+  {
+    id: "7",
+    name: "Monk",
+    type: UnitType.HealerSingle,
+    health: 130,
+    maxHealth: 130,
+    damage: 0,
+    heal: 40,
+    initiative: 20,
+    status: UnitStatus.Normal,
+    image: monk,
+  },
+  {
+    id: "8",
+    name: "Bishop",
+    type: UnitType.HealerMass,
+    health: 130,
+    maxHealth: 130,
+    damage: 0,
+    heal: 25,
+    initiative: 20,
+    status: UnitStatus.Normal,
+    image: bishop,
+  },
+  {
+    id: "9",
+    name: "Sirena",
+    type: UnitType.Paralyzer,
+    health: 80,
+    maxHealth: 80,
+    damage: 0,
+    heal: 0,
+    initiative: 20,
+    status: UnitStatus.Normal,
+    image: sirena,
+  },
+];
